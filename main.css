@@ -1,0 +1,14 @@
+html, body { max-width: 800%; margin: 0 auto; }
+
+header { display: flex; flex-direction: row; justify-content: space-between; padding: 5px 0px; box-shadow: 0px 2px 0px #d1cfcf; position: fixed; top: 0%; background-color: white; margin: 0 auto; width: 100%; }
+
+.logo-ada .img-ada { width: 15%; margin: 15px; }
+
+.nav ul { display: flex; flex-direction: row; justify-content: space-around; list-style: none; }
+.nav ul .nav-link { font-family: Montserrat, sans-serif; padding-left: 25px; color: #00428A; font-weight: 400px; font-size: 14px; cursor: pointer; }
+.nav ul .nav-link:hover { color: #007bff; }
+
+/*header{ position: fixed; width: 100%;
+}*/
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,55 @@
+header{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    padding:5px 0px;
+    box-shadow:0px 2px 0px rgb(209, 207, 207) ;
+    position: fixed;
+    top: 0%;
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+}
+.logo-ada{
+        .img-ada{
+            width:15%;  
+            margin: 15px;
+
+    
+
+}
+}
+
+.nav {
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        
+        .nav-link{
+                font-family:$main-title;
+                padding-left: 25px;
+                color: $terciary-color;
+                font-weight: 400px;
+                font-size: 14px;
+                cursor: pointer;
+                 &:hover{
+                     color:$nav-color;
+                
+                }
+                
+                
+   }
+
+}
+}
+
+
+
+
+/*header{
+    position: fixed;
+    width: 100%;
+}*/
