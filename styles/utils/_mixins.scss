@@ -1,0 +1,44 @@
+@mixin titles-sections ($secundary-color){
+    font-size:$main-size;
+    font-family: $main-title;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    margin: 15px;
+}
+@mixin sub-titles-sections {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: $color-sub-title;
+    width: 40%;
+    font-family:$main-text;
+    line-height: 25px;
+}
+
+.section-title{
+    h2{   
+    @include titles-sections(#283d50)}
+
+    p {
+    @include sub-titles-sections}
+       
+}
+.diferent-section-title{
+    @include titles-sections(#283d50);
+    color: #ECF5FF;
+    @include sub-titles-sections(#ECF5FF)
+}
+
+
+
+/*@mixin section-container ($main-color){
+    margin: 0 auto; 
+    position: relative;
+    display: flex;
+    background-color:$main-color;
+}
+.section-container{
+    @include section-container 
+}*/

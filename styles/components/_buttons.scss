@@ -1,0 +1,27 @@
+.main-button {
+    display: flex;
+    flex-direction: row;
+        .home-button {
+            width: 180px;
+            height: 45px;
+            border: 1px solid;
+            margin-left: 15px;
+            border-radius: 25px;
+            font-family: $main-title;
+            font-weight: bold;
+            font-size: 15px;
+            letter-spacing: 2px;
+            padding: 10px;
+            &#started {
+                background-color: $nav-color;
+                border: 1px solid $nav-color;
+                color: $secundary-color;
+                transition: .3s all;
+                &:hover {
+                    background-color: $main-color;
+                    border: 2px solid $secundary-color;
+                    
+                }
+            }
+        }
+}
