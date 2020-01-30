@@ -1,73 +1,61 @@
-/*
-Error: Mixin sub-titles-sections takes 0 arguments but 1 was passed.
-        on line 31 of C:/Users/Usuario/Desktop/Curso ADA/TP1/styles/utils/_mixins.scss, in `sub-titles-sections'
-        from line 31 of C:/Users/Usuario/Desktop/Curso ADA/TP1/styles/utils/_mixins.scss
-        from line 8 of C:\Users\Usuario\Desktop\Curso ADA\TP1\main.scss
+.main-button { display: flex; flex-direction: row; }
+.main-button .home-button { width: 180px; height: 45px; border: 1px solid; margin-left: 15px; border-radius: 25px; font-family: Montserrat, sans-serif; font-weight: bold; font-size: 15px; letter-spacing: 2px; padding: 10px; }
+.main-button .home-button#started { background-color: #007bff; border: 1px solid #007bff; color: #ECF5FF; transition: .3s all; }
+.main-button .home-button#started:hover { background-color: #004a99; border: 2px solid #ECF5FF; }
 
-Backtrace:
-C:/Users/Usuario/Desktop/Curso ADA/TP1/styles/utils/_mixins.scss:31:in `sub-titles-sections'
-C:/Users/Usuario/Desktop/Curso ADA/TP1/styles/utils/_mixins.scss:31
-C:\Users\Usuario\Desktop\Curso ADA\TP1\main.scss:8
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:59:in `perform_arguments'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:362:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Mixin sub-titles-sections takes 0 arguments but 1 was passed.\A         on line 31 of C:/Users/Usuario/Desktop/Curso ADA/TP1/styles/utils/_mixins.scss, in `sub-titles-sections'\A         from line 31 of C:/Users/Usuario/Desktop/Curso ADA/TP1/styles/utils/_mixins.scss\A         from line 8 of C:\Users\Usuario\Desktop\Curso ADA\TP1\main.scss"; }
+.about-descriptions { display: flex; flex-direction: row; justify-content: space-around; padding-left: 25px; }
+.about-descriptions button { width: 65px; height: 65px; border-radius: 50%; background-color: white; border: 2px solid #007bff; position: relative; padding-left: 20px; margin: 40px 15px; }
+.about-descriptions button i { font-size: 25px; position: absolute; top: 18px; right: 18px; color: #007bff; }
+
+html, body { max-width: 500%; margin: 0 auto; }
+
+.home-container { width: 100%; height: 450px; margin: 0 auto; padding: 50px 95px; background-color: #004a99; position: relative; top: 72px; display: flex; flex-direction: row; justify-content: space-between; }
+.home-container .img-home { width: 550px; }
+.home-container .img-home .home-section { display: flex; flex-direction: column; }
+
+.main-title { font-size: 34px; font-family: Montserrat, sans-serif; font-weight: bold; color: white; line-height: 65px; }
+.main-title #solutions { font-family: Montserrat, sans-serif; color: #74B5FC; text-decoration: underline; }
+
+.about-container { margin: 0 auto; display: flex; flex-direction: column; position: relative; top: 10px; font-family: Open Sans, sans-serif; font-size: 16px; letter-spacing: 0.5px; }
+.about-container .sub-container { padding: 50px 100px; display: flex; flex-direction: row; }
+.about-container .sub-container .about-tex { font-size: 13px; letter-spacing: 0.5px; }
+.about-container .sub-container .img-home { width: 550px; margin: 0px 15px; }
+
+.section-title { display: block; position: relative; top: 50px; }
+
+.service-container { background-color: #ECF5FF; margin: 0 auto; text-align: center; padding: 30px; }
+.service-container .section-wrap { display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; margin: 20px auto; padding: 45px; }
+.service-container .section-wrap .card-services { display: flex; flex-direction: column; background-color: white; width: 400px; height: 150px; margin: 30px; padding: 30px 30px 30px 60px; position: relative; overflow: hidden; }
+.service-container .section-wrap .card-services i { position: absolute; top: 95px; left: -20px; font-size: 45px; }
+
+.header { display: flex; flex-direction: row; justify-content: space-between; padding: 5px 0px; box-shadow: 0px 0px 20px 0px #d1cfcf; position: fixed; top: 0%; background-color: white; margin: 0 auto; width: 100%; z-index: 1000; }
+
+.logo-ada .img-ada { width: 70px; margin: 20px; padding-left: 80px; }
+
+.nav ul { display: flex; list-style: none; padding-right: 80px; }
+.nav ul .nav-link { font-family: Open Sans, sans-serif; padding-left: 25px; color: #00428A; font-weight: 400px; font-size: 15px; cursor: pointer; }
+.nav ul .nav-link:hover { color: #007bff; }
+
+/*
+.container-second{ display: flex; flex-direction: row;     justify-content: space-between;
+}
+
+
+
+
+/*header{ position: fixed; width: 100%;
+}*/
+.home-button #service { background-color: #1445B3; border: 1px solid #1445B3; transition: .3s all; color: #ECF5FF; }
+
+.section-title h2 { font-size: 36px; font-family: Montserrat, sans-serif; text-align: center; font-weight: bold; position: relative; margin: 15px; }
+.section-title p { text-align: center; margin: auto; font-size: 15px; padding-bottom: 60px; color: #556877; width: 40%; font-family: Open Sans, sans-serif; line-height: 25px; }
+
+.diferent-section-title { font-size: 36px; font-family: Montserrat, sans-serif; text-align: center; font-weight: bold; position: relative; margin: 15px; color: #ECF5FF; }
+.diferent-section-title p { text-align: center; margin: auto; font-size: 15px; padding-bottom: 60px; color: #556877; width: 40%; font-family: Open Sans, sans-serif; line-height: 25px; color: #ECF5FF; }
+
+/*@mixin section-container ($main-color){ margin: 0 auto;  position: relative; display: flex; background-color:$main-color;
+}
+.section-container{ @include section-container 
+}*/
+
+/*# sourceMappingURL=main.css.map */

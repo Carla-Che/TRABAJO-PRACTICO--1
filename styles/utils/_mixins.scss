@@ -6,29 +6,47 @@
     position: relative;
     margin: 15px;
 }
-@mixin sub-titles-sections {
+@mixin sub-titles-sections ($secundary-color) {
     text-align: center;
     margin: auto;
     font-size: 15px;
     padding-bottom: 60px;
-    color: $color-sub-title;
+    color: $letter-subtitle-color;
     width: 40%;
     font-family:$main-text;
     line-height: 25px;
 }
+@mixin button ($nav-color){
+    background-color: $nav-color;
+    border: 1px solid $nav-color;
+    transition: .3s all;
+    
+}
+
+.home-button{
+    #service{
+    @include button(#1445B3);
+    color: #ECF5FF;
+    }
+} 
+
 
 .section-title{
     h2{   
     @include titles-sections(#283d50)}
 
     p {
-    @include sub-titles-sections}
+    @include sub-titles-sections (#283d50)}
        
 }
 .diferent-section-title{
     @include titles-sections(#283d50);
     color: #ECF5FF;
-    @include sub-titles-sections(#ECF5FF)
+    p{
+     @include sub-titles-sections(#ECF5FF);
+    color: #ECF5FF;
+    }
+   
 }
 
 

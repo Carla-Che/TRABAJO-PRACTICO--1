@@ -1,6 +1,6 @@
 html,
 body{
-    max-width:600%;
+    max-width:500%;
     margin: 0 auto;   
 }
 
@@ -44,17 +44,24 @@ body{
        flex-direction: column;
        position: relative;
        top:10px;
-      
+       font-family: $main-text;
+       font-size: 16px;
+       letter-spacing: 0.5px;
+             
        .sub-container{
            padding: 50px 100px;
            display: flex;
            flex-direction: row;
-           .img-home {
-            width:550px;
-            
+           .about-tex{
+                font-size: 13px;
+                letter-spacing: 0.5px;
             }
-
-
+                .img-home {
+                width:550px;
+                margin: 0px 15px;
+ 
+            }
+            
 
        }
    }
@@ -65,3 +72,38 @@ body{
       top: 50px;
 
   } 
+
+  .service-container{
+      background-color:$secundary-color;
+      margin: 0 auto;
+      text-align: center;
+      padding: 30px;
+
+      .section-wrap{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin: 20px auto;
+          padding: 45px;
+    
+    .card-services{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 400px;
+      height: 150px;
+      margin: 30px;
+      padding: 30px 30px 30px 60px;
+      position: relative;
+      overflow: hidden;
+        i{
+            position: absolute;
+            top: 95px;
+            left: -20px;
+            font-size: 45px;
+        }
+        }
+     }
+}
+  
