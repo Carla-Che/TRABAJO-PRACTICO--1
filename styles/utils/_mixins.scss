@@ -4,13 +4,13 @@
     text-align: center;
     font-weight: bold;
     position: relative;
-    margin: 15px;
+    margin: 50px;
 }
 @mixin sub-titles-sections ($secundary-color) {
     text-align: center;
-    margin: auto;
+    margin:0 auto;
     font-size: 15px;
-    padding-bottom: 60px;
+    padding-bottom:70px;
     color: $letter-subtitle-color;
     width: 40%;
     font-family:$main-text;
@@ -19,35 +19,85 @@
 @mixin button ($nav-color){
     background-color: $nav-color;
     border: 1px solid $nav-color;
-    transition: .3s all;
+    transition: .3s all; 
+}
+
+@mixin text-card-service { 
+    font-size: 14px;
+    font-family: $main-text;
+    text-align: left;
+    padding: 15px 0px 15px;
     
 }
 
+
 .home-button{
-    #service{
     @include button(#1445B3);
     color: #ECF5FF;
-    }
+         &#service {
+            background-color: $main-color;
+            border: 2px solid $secundary-color;
+            color: $secundary-color;
+            transition: .3s all;
+             &:hover {
+           background-color: $nav-color;
+                border: 1px solid $nav-color;
+                color: $secundary-color;
+                transition: .3s all;
+             }
+        }  
+
 } 
 
 
 .section-title{
-    h2{   
+    .title{   
     @include titles-sections(#283d50)}
+    h3{
+        font-family: $main-title;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+    }
 
-    p {
+   .subtitle {
     @include sub-titles-sections (#283d50)}
        
 }
 .diferent-section-title{
     @include titles-sections(#283d50);
     color: #ECF5FF;
-    p{
+    .subtitle{
      @include sub-titles-sections(#ECF5FF);
     color: #ECF5FF;
+    font-weight:lighter ;
     }
    
 }
+.card-services{
+    @include text-card-service;
+    h4{
+        font-family:$main-title;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    h4:hover{
+        color: $nav-color;
+    }
+    i:nth-child(1){
+        color: purple;
+    }
+    i:nth-child(2){
+        color:yellow;
+    }   
+ 
+}
+
+
+
+
+
 
 
 

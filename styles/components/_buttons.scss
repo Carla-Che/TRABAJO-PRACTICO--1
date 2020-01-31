@@ -39,7 +39,7 @@
         border: 2px solid $nav-color ;
         position: relative;
         padding-left: 20px;
-        margin: 40px 15px;
+        margin: 20px 15px;
    
         i{
             font-size: 25px;
@@ -53,3 +53,62 @@
     }
 
 }
+.about-button:hover{  
+    button{
+    background-color: $nav-color;
+    border: 2px solid $nav-color;
+    color: white;
+    transition: 0.5s all;
+    i{
+        color: white;
+        transition: 0.5s all;
+    }
+
+}
+
+}
+
+.button-portfolio{
+    text-align: center;
+    margin: 0 auto;
+    
+   button {
+    width: 65px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin: 8px;
+    font-family: $main-text;
+    color: white;
+    background-color: $nav-color;
+    
+    &:nth-child(+2){
+        background-color:$secundary-color;
+        color: $nav-color;
+        &:hover{
+            color: white;
+            background-color: $nav-color;
+        }
+     }
+
+        &:nth-child(+3){
+            background-color: $secundary-color;
+            color: $nav-color;
+            &:hover{
+                color: white;
+                background-color: $nav-color;
+            }
+        }
+        &:nth-child(+4){
+            background-color: $secundary-color;
+            color: $nav-color;
+            &:hover{
+                color: white;
+                background-color: $nav-color;
+            }
+        }
+   
+
+    }
+}
+
