@@ -3,14 +3,14 @@
     font-family: $main-title;
     text-align: center;
     font-weight: bold;
-    position: relative;
-    margin: 50px;
-}
+    margin: 0 auto;
+    padding: 5px 10px 0px;
+    }
 @mixin sub-titles-sections ($secundary-color) {
     text-align: center;
     margin:0 auto;
     font-size: 15px;
-    padding-bottom:70px;
+    padding-bottom:20px;
     color: $letter-subtitle-color;
     width: 40%;
     font-family:$main-text;
@@ -27,9 +27,21 @@
     font-family: $main-text;
     text-align: left;
     padding: 15px 0px 15px;
-    
 }
 
+@mixin transitions-team {
+    font-size: 13;
+    font-family: $main-text;
+    color: green;
+    display: flex;  
+    justify-content: space-between;  
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    right: 900px;
+    
+}
 
 .home-button{
     @include button(#1445B3);
@@ -48,29 +60,28 @@
         }  
 
 } 
-
-
 .section-title{
     .title{   
-    @include titles-sections(#283d50)}
+    @include titles-sections(#556877)}
     h3{
         font-family: $main-title;
         font-size: 20px;
-        text-align: center;
         font-weight: 600;
     }
-
    .subtitle {
     @include sub-titles-sections (#283d50)}
-       
+
 }
 .diferent-section-title{
     @include titles-sections(#283d50);
-    color: #ECF5FF;
+        color: #ECF5FF;
+        padding: 5px 5px 0px;
+        padding-bottom:50px;
     .subtitle{
      @include sub-titles-sections(#ECF5FF);
-    color: #ECF5FF;
-    font-weight:lighter ;
+        color: #ECF5FF;
+        font-weight:lighter;
+        padding-top: 20px;
     }
    
 }
@@ -85,13 +96,25 @@
     h4:hover{
         color: $nav-color;
     }
-    i:nth-child(1){
+   & i:nth-child(1){
         color: purple;
+        
+        & i:nth-child(+2){
+        color: red;
     }
-    i:nth-child(2){
-        color:yellow;
-    }   
- 
+    }
+}
+ .team-efects {
+    @include transitions-team;
+            .social-media{
+           ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+           }
+        } 
+  
 }
 
 

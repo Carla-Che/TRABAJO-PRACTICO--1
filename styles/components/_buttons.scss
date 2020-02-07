@@ -70,7 +70,7 @@
 
 .button-portfolio{
     text-align: center;
-    margin: 0 auto;
+    margin: 40px;
     
    button {
     width: 65px;
@@ -107,8 +107,120 @@
                 background-color: $nav-color;
             }
         }
-   
-
     }
 }
+.button-testimonial {
+    text-align: center;
+    button {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: none;
+    margin: 4px;
+    background-color: $nav-color;
+    cursor: pointer;
+        &:nth-child(+2){
+            background-color: #ddd;
+            &:hover .sara {
+                background-color: $nav-color;
+            }
+        }
+        
+    }
+}
+.btn-message{
+    width: 180px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: $nav-color;
+    border: 1px solid $nav-color;
+    color:white;
+    font-family: $main-title;
+    font-size: 16px;
+    &:hover{
+        background-color: #046bda;
+    }
 
+}
+.newsletter-footer {
+    position: relative;
+    .input-footer {
+        border: none;
+        height: 32px;
+        width: 200px;
+        margin: 0px;
+        position: absolute;
+        bottom: 50px;
+        left: 0px;
+    }
+    .btn-footer {
+        width: 100px;
+        height: 34px;
+        border: 1px solid $nav-color;
+        margin: 0px;
+        background-color: $nav-color;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        bottom: 50px;
+        left: 200px;
+        &:hover{
+            background-color: #046bda;
+        }
+    }
+}
+.btn-to-back {
+    position: fixed;
+    background: $nav-color;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid $nav-color;
+    z-index: 15;
+    i {
+        color: white;
+        font-size: 30px;
+    }
+    a{
+        color: #007BFF;
+        text-decoration: none;
+        background-color: transparent;
+        display: inline;
+    }
+}
+.social-media{      
+    display: flex;
+    flex-direction: row;   
+    justify-content: stretch;   
+    margin: 0px;
+    button {
+        width: 35px;
+        height: 35px;   
+        margin-left: 8px;     
+        border-radius: 50%; 
+        font-size: 130px;
+        border: 1px solid $nav-color;
+        background-color: $nav-color;
+        position: relative;
+        bottom: -30px;
+        left: -10px;   
+        &:hover {
+            background-color: #046BDA;
+            border: 1px solid #046BDA;
+        }          
+         i {
+             font-size: 18px;
+             color: white;
+             position: relative;
+             bottom: 97px;
+             right: 0px;
+         }                   
+    }
+}

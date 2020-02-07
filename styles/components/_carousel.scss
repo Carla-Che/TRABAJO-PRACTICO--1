@@ -1,0 +1,40 @@
+.carousel{
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    position: absolute;
+    right: 550px;
+    justify-content: space-evenly;
+    color: white;
+    font-family: $main-title;
+    width: 300px;
+
+    .number-carousel{
+        position: relative;
+        top: 40px;
+        right: 95px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 180px;
+       
+    
+   
+    span{
+        font-weight: bold;
+        font-size: 48px;
+        display: block;
+        
+
+    }
+    p{
+        padding: 0;
+        margin: 0 0 20px 0;
+        font-size: 14px;
+        color: #cce5ff;
+   }
+ }
+
+
+}
