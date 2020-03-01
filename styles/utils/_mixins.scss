@@ -29,7 +29,7 @@
     padding: 15px 0px 15px;
 }
 
-@mixin transitions-team {
+/*@mixin transitions-team {
     font-size: 13;
     font-family: $main-text;
     color: green;
@@ -38,9 +38,12 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    position: absolute;
-    right: 900px;
-    
+    position: relative;
+    right: 500px;   
+}*/
+
+@mixin random-color () {
+    color: rgb(random(255), random(244), random(355));
 }
 
 .home-button{
@@ -96,15 +99,19 @@
     h4:hover{
         color: $nav-color;
     }
-   & i:nth-child(1){
-        color: purple;
-        
-        & i:nth-child(+2){
-        color: red;
+    @for $i from 1 to 6 {
+        &:nth-child(n+#{$i}) {
+        i{
+                opacity: 0.5;
+                font-size:48px;
+                width: 5px;
+                @include random-color;
+                }
+        }
     }
-    }
+  
 }
- .team-efects {
+/* .team-efects {
     @include transitions-team;
             .social-media{
            ul{
@@ -112,10 +119,12 @@
             display: flex;
             justify-content: space-around;
             flex-direction: row;
+            
            }
         } 
   
-}
+}*/
+
 
 
 

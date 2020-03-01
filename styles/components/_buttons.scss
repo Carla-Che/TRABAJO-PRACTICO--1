@@ -5,13 +5,20 @@
             width: 180px;
             height: 45px;
             border: 1px solid;
-            margin-left: 15px;
+            margin-left: 10px;
             border-radius: 25px;
             font-family: $main-title;
             font-weight: bold;
             font-size: 15px;
             letter-spacing: 2px;
             padding: 10px;
+            @media(max-width: 999px){
+                font-size: 12px;
+                display: flex;
+                flex-direction:column ;
+                justify-content: center;
+                text-align: center;
+            }
             &#started {
                 background-color: $nav-color;
                 border: 1px solid $nav-color;
@@ -222,5 +229,37 @@
              bottom: 97px;
              right: 0px;
          }                   
+    }
+}
+.mobile-button {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    z-index: 1031;
+    color: $background;
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    display: none;
+    @media (max-width: 999px) {   
+        display: block;
+    }
+}
+
+.portfolio-icon {
+    button {
+        width: 40px;
+        height: 40px;
+        background-color: $nav-color;
+        border: 1px solid $nav-color;
+        border-radius: 50%;
+        position: relative;
+        top: 0;
+        margin: 0px 6px;
+        transition: .4s all;
+        &:hover {
+            background-color:rgb(76, 145, 219);
+            border: 1px solid rgb(76, 145, 219);
+        }
     }
 }

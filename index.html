@@ -11,82 +11,69 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
 <body>
-
     <header class="header">
         <div class="logo-ada">
             <img class="img-ada" src="img/logo-tp.png" alt="logo ada">
         </div>
-
-        <nav class="nav">
-            <ul>
-                <li class="nav-link"><a href="#back"  id="home"> Home</a></li>
-                <li class="nav-link">About Us</li>
-                <li class="nav-link">Service</li class="nav-link">
-                <li class="nav-link">Portfolio</li>
-                <li class="nav-link" >Team</li class="nav-link" >
-                <li class="nav-link">Drop Down <i class="fas fa-sort-down"></i> </li>
-                  <!--<ul class="container-second">
-                        <li class="sub-nav">Drop Down 1
-                            <ul class="sub-container">
-                                <li class="sub-nav">Deep Drop Down 1</li>
-                                <li class="sub-nav">Deep Drop Down 2</li>
-                                <li class="sub-nav">Deep Drop Down 3</li>
-                                <li class="sub-nav">Deep Drop Down 4</li>
+        <nav >
+            <ul class="container-nav">
+                <li class="nav-link"><a href="#back"  id="home">Home</a></li>
+                <li class="nav-link"><a href="#about-us">About Us</a> </li>
+                <li class="nav-link"><a href="#services">Services</a> </li>
+                <li class="nav-link"><a href="#portfolio">Portfolio</a> </li>
+                <li class="nav-link"><a href="#team">Team</a> </li>
+                <li class="nav-link">Drop Down <i class="fas fa-chevron-down"></i></li>
+                    <ul class="subcontainer-nav">
+                        <li class="sub-nav">Drop Down 1</li>
+                        <li class="sub-nav">Drop Down 2<i class="fas fa-chevron-right"></i></li>
+                            <ul class="sub-subcontainer-nav">
+                                <li class="sub-subnav-link">Deep Drop Down</li>
+                                <li class="sub-subnav-link">Deep Drop Down</li>
+                                <li class="sub-subnav-link">Deep Drop Down</li>
+                                <li class="sub-subnav-link">Deep Drop Down</li>
                             </ul>
-                        </li>
-                   <li class="sub-nav"> Drop Down 2 
-                         <ul class="sub-container">
-                            <li class="sub-nav">Deep Drop Down 1</li>
-                            <li class="sub-nav">Deep Drop Down 2 <i class="fas fa-chevron-right"></i></li>
-                            <li class="sub-nav">Deep Drop Down 3</li>
-                            <li class="sub-nav">Deep Drop Down 4</li>
-                        </ul>
-                    </li>
-            
-                        <li class="sub-nav">Drop Down 3
-                            <ul class="sub-container">
-                                <li class="sub-nav">Deep Drop Down 1</li>
-                                <li class="sub-nav">Deep Drop Down 2</li>
-                                <li class="sub-nav">Deep Drop Down 3</li>
-                                <li class="sub-nav">Deep Drop Down 4</li>
-                            </ul>
-                        </li>
-                        
-                        <li class="sub-nav">Drop Down 4
-                            <ul class="sub-container">
-                                <li class="sub-nav">Deep Drop Down 1</li>
-                                <li class="sub-nav">Deep Drop Down 2</li>
-                                <li class="sub-nav">Deep Drop Down 3</li>
-                                <li class="sub-nav">Deep Drop Down 4</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul> -->
-                <li class="nav-link">Contact Us</li>
+                        <li class="sub-nav">Drop Down 3</li>
+                        <li class="sub-nav">Drop Down 4</li>
+                        <li class="sub-nav">Drop Down 5</li>
+                    </ul> 
+                <li class="nav-link"><a href="#contact-us">Contact Us</a> </li>
+            </ul>
         </nav>
-    </header class="header" >
+
+    </header>    
+        <aside id="abrir">     
+            <a href="#" class="closed-bar" ><i class="fas fa-times"></i></a>   
+            <nav class="mobile-nav">
+                <ul class="container-sidebar">
+                    <li class="nav-sidebar"><a href="#back"  id="home"> Home</a></li>
+                    <li class="nav-sidebar"><a href="#about-us">About Us</a> </li>
+                    <li class="nav-sidebar"><a href="#services">Services</a> </li>
+                    <li class="nav-sidebar"><a href="#portfolio">Portfolio</a> </li>
+                    <li class="nav-sidebar"><a href="#team">Team</a> </li>
+                    <li class="nav-sidebar">Drop Down <i class="fas fa-sort-down"></i></li>
+                    <li class="nav-sidebar"><a href="#contact-us">Contact Us</a> </li>
+                </ul> 
+            </aside>
     <button class="btn-to-back"><a href="#back"><i class="fas fa-angle-up"></i></a> </button> 
-    <main id="back"> 
-        
-        <section class="home-container">
+    <!-- ==================================================================
+    ========================= BUTTON/SIDEBAR HEADER ==================================-->
+    <button type="button" class="mobile-button"><a href="#abrir" class="opend-bar"><i class="fas fa-bars"></i> </a></button>
+    <main> 
+    <section class="home-container" id="back">
           <div class="home-section">
-           
-              <div class="main-title">
+            <div class="main-title">
                 <h1>We provide  <br> <samp id="solutions">solutions</samp> <br> for your business! </h1>
             </div>  
             <div class="main-button">
-    
                 <button class="home-button" id="started"> Get Started</button>
                 <button class="home-button" id="service"> Our Service</button>
-    
             </div> 
-          </div>
+            </div>
             <div class="img-section">
             <img class="img-home" src="img/intro-img.svg" alt="ada">
             </div>
             </section>
-        <section class="about-container"> 
+        <section class="about-container" id="about-us"> 
             <header class="section-title">
                         <h2 class="title"> About Us </h2>
                         <p class="subtitle">
@@ -159,7 +146,7 @@
         </div>
         </section>
 
-        <section class="service-container">
+        <section class="service-container" id="services">
             <header class="section-title">
                <h2 class="title"> Services </h2>
                 <p class="subtitle">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</pclass="title">
@@ -248,7 +235,7 @@
                 </div>
        </section>
     
-        <section class="portfolio-container">
+        <section class="portfolio-container"id="portfolio">
             <header class="section-title">
                <h2 class="title">Our Portfolio</h2>
             </header>
@@ -259,33 +246,116 @@
                     <button>WEB</button>
                </div>  
                 <div class="wrap-portfolio">
-                    <figure>
-                        <img class="img-portfolio"src="img/portfolio/app1.jpg"alt=""> 
-                    </figure>
-                    <figure>
-                    <img class="img-portfolio" src="img/portfolio/web3.jpg"alt="">
-                    </figure>
-                    <figure>
-                    <img class="img-portfolio"src="img/portfolio/app2.jpg"alt="">
-                    </figure>
-                    <figure>
-                    <img class="img-portfolio"src="img/portfolio/card2.jpg"alt="">
-                    </figure>
-                    <figure>
-                    <img class="img-portfolio" src="img/portfolio/web2.jpg"alt="">
-                    </figure>
-                    <figure>
-                    <img class="img-portfolio"src="img/portfolio/app3.jpg"alt="">
-                    </figure>
-                    <figure>
-                    <img class="img-portfolio" src="img/portfolio/card1.jpg"alt="">
-                    </figure>
-                    <figure>
-                    <img class="img-portfolio"src=" img/portfolio/card3.jpg"alt="">
-                    </figure>
-                    <figure>
-                    <img class="img-portfolio"src="img/portfolio/web1.jpg"alt="">
-                    </figure>                 
+
+                    <div class="img-portfolio">
+                        <img src="img/portfolio/app1.jpg"alt="">
+                        <div class="portfolio-info">
+                            <h4> App 1</h4>
+                            <p>AAP</p>
+                            <div class="portfolio-icon">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><a href="#back"><i class="fas fa-info"></i></a> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-portfolio">
+                        <img class="img-portfolio" src="img/portfolio/web3.jpg"alt="">
+                        <div class="portfolio-info">
+                            <h4> App 1</h4>
+                            <p>AAP</p>
+                            <div class="portfolio-icon">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><a href="#back"><i class="fas fa-info"></i></a> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-portfolio">
+                        <img class="img-portfolio"src="img/portfolio/app2.jpg"alt="">
+                        <div class="portfolio-info">
+                            <h4> App 1</h4>
+                            <p>AAP</p>
+                            <div class="portfolio-icon">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><a href="#back"><i class="fas fa-info"></i></a> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-portfolio">
+                        <img class="img-portfolio"src="img/portfolio/card2.jpg"alt="">
+                        <div class="portfolio-info">
+                            <h4> App 1</h4>
+                            <p>AAP</p>
+                            <div class="portfolio-icon">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><a href="#back"><i class="fas fa-info"></i></a> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-portfolio">
+                        <img class="img-portfolio" src="img/portfolio/web2.jpg"alt="">
+                        <div class="portfolio-info">
+                            <h4> App 1</h4>
+                            <p>AAP</p>
+                            <div class="portfolio-icon">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><a href="#back"><i class="fas fa-info"></i></a> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-portfolio">
+                        <img class="img-portfolio"src="img/portfolio/app3.jpg"alt="">
+                        <div class="portfolio-info">
+                            <h4> App 1</h4>
+                            <p>AAP</p>
+                            <div class="portfolio-icon">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><a href="#back"><i class="fas fa-info"></i></a> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-portfolio">
+                        <img class="img-portfolio"src=" img/portfolio/card1.jpg"alt="">
+                        <div class="portfolio-info">
+                            <h4> App 1</h4>
+                            <p>AAP</p>
+                            <div class="portfolio-icon">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><a href="#back"><i class="fas fa-info"></i></a> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-portfolio">
+                        <img class="img-portfolio"src="img/portfolio/card3.jpg"alt="">
+                        <div class="portfolio-info">
+                            <h4> App 1</h4>
+                            <p>AAP</p>
+                            <div class="portfolio-icon">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><a href="#back"><i class="fas fa-info"></i></a> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-portfolio">
+                        <img class="img-portfolio"src="img/portfolio/web1.jpg"alt="">
+                        <div class="portfolio-info">
+                            <h4> App 1</h4>
+                            <p>AAP</p>
+                            <div class="portfolio-icon">
+                                <button><i class="fas fa-eye"></i></button>
+                                <button><a href="#back"><i class="fas fa-info"></i></a> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                         
                </div>
     
         </section>
@@ -361,60 +431,75 @@
                 <button class="btn-four"></button>
             </div>
         </section>
-    
-        <section class="team-container">
-            <header class="section-title">
-                     <h2 class="title">Team</h2>
+        <section id="team">
+            <div class="team-contanier">
+                <header class="section-title">
+                    <h2 class="title">Team</h2>
                     <p class="subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-            </header> 
-                 <div class="team">
-                     <img class="img-team" src="img/team-01.jpg" alt="" >
-                    <div class="team-efects">
-                           <h3> Ben Affleck</h3>
-                     <p>Chief Executive Officer</p> 
-                     <div class="social-media">
-                        <ul> 
-                             <li><i class="fab fa-twitter"></i> </li> 
-                             <li> <i class="fab fa-facebook"></i> </li>
-                             <li><i class="fab fa-google-plus-g"></i></li> 
-                             <li><i class="fab fa-linkedin"></i> </li>
-                        </ul>
-                    </div>
-                     <img class="img-team" src="img/team-02.jpg" alt="">
-                     <h3> Christian Bale</h3>
-                     <p>Product Manager</p> 
-                     <div class="social-media">
-                        <ul> 
-                             <li><i class="fab fa-twitter"></i> </li> 
-                             <li> <i class="fab fa-facebook"></i> </li>
-                             <li><i class="fab fa-google-plus-g"></i></li> 
-                             <li><i class="fab fa-linkedin"></i> </li>
-                        </ul>
-                    </div>
-                     <img class="img-team"src="img/team-03.jpg" alt="">
-                     <h3>Michael Keaton</h3>
-                     <p>CTO</p> 
-                     <div class="social-media">
-                        <ul> 
-                             <li><i class="fab fa-twitter"></i> </li> 
-                             <li> <i class="fab fa-facebook"></i> </li>
-                             <li><i class="fab fa-google-plus-g"></i></li> 
-                             <li><i class="fab fa-linkedin"></i> </li>
-                        </ul>
-                    </div>
-                     <img class="img-team"src="img/team-04.jpg" alt="">
-                     <h3> Adam West</h3>
-                     <p>Accountant</p> 
-                     <div class="social-media">
-                        <ul> 
-                             <li><i class="fab fa-twitter"></i> </li> 
-                             <li> <i class="fab fa-facebook"></i> </li>
-                             <li><i class="fab fa-google-plus-g"></i></li> 
-                             <li><i class="fab fa-linkedin"></i> </li>
-                        </ul>
+                </header>
+                <div class="team">
+                    <div class="img-team">
+                        <img src="img/team-01.jpg" alt="" class="">
+                        <div class="team-information">  
+                            <div class="team-member">
+                                <h4>Ben Affleck</h4>
+                                <p>Chief Ejecutive Officer</p>
+                            </div>                  
+                            <div class="team-social-icon">
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                        </div>   
+                    </div>     
+                    <div class="img-team">
+                        <img src="img/team-02.jpg" alt="" >
+                        <div class="team-information">  
+                            <div class="team-member">
+                                <h4>Christian Bale</h4>
+                                <p>Producter Manager</p>
+                            </div>                  
+                            <div class="team-social-icon">
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                        </div>   
                     </div> 
-                 </div>  
-                 </div>
+                    <div class="img-team">
+                        <img src="img/team-03.jpg" alt="">
+                        <div class="team-information">  
+                            <div class="team-member">
+                                <h4>Michael Keaton</h4>
+                                <p>CTO</p>
+                            </div>                  
+                            <div class="team-social-icon">
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                        </div>   
+                    </div>     
+                    <div class="img-team">
+                        <img src="img/team-04.jpg" alt="">
+                        <div class="team-information">  
+                            <div class="team-member">
+                                <h4>Adam West</h4>
+                                <p>Accountant</p>
+                            </div>                  
+                            <div class="team-social-icon">
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                        </div>   
+                    </div>             
+                </div>
+            </div>    
         </section>
         <section class="clients-container">
             <header class="section-title">
