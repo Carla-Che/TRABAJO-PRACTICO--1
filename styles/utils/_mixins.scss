@@ -1,12 +1,13 @@
-@mixin titles-sections ($secundary-color){
+@mixin titles-sections ($letter-title-color){
     font-size:$main-size;
     font-family: $main-title;
     text-align: center;
     font-weight: bold;
     margin: 0 auto;
     padding: 5px 10px 0px;
+    color: $letter-title-color;
     }
-@mixin sub-titles-sections ($secundary-color) {
+@mixin sub-titles-sections ($letter-subtitle-color) {
     text-align: center;
     margin:0 auto;
     font-size: 15px;
@@ -29,19 +30,6 @@
     padding: 15px 0px 15px;
 }
 
-/*@mixin transitions-team {
-    font-size: 13;
-    font-family: $main-text;
-    color: green;
-    display: flex;  
-    justify-content: space-between;  
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-    right: 500px;   
-}*/
-
 @mixin random-color () {
     color: rgb(random(255), random(244), random(355));
 }
@@ -55,7 +43,7 @@
             color: $secundary-color;
             transition: .3s all;
              &:hover {
-           background-color: $nav-color;
+            background-color: $nav-color;
                 border: 1px solid $nav-color;
                 color: $secundary-color;
                 transition: .3s all;
@@ -75,19 +63,15 @@
     @include sub-titles-sections (#283d50)}
 
 }
-.diferent-section-title{
-    @include titles-sections(#283d50);
-        color: #ECF5FF;
-        padding: 5px 5px 0px;
-        padding-bottom:50px;
-    .subtitle{
-     @include sub-titles-sections(#ECF5FF);
-        color: #ECF5FF;
-        font-weight:lighter;
-        padding-top: 20px;
+.why-container {
+    .section-title {
+        .title {   
+        @include titles-sections(white)} 
+        .subtitle {
+        @include sub-titles-sections (white)}
     }
-   
 }
+   
 .card-services{
     @include text-card-service;
     h4{
@@ -111,19 +95,6 @@
     }
   
 }
-/* .team-efects {
-    @include transitions-team;
-            .social-media{
-           ul{
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row;
-            
-           }
-        } 
-  
-}*/
 
 
 

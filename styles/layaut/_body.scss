@@ -3,6 +3,8 @@ body{
     max-width:500%;
     margin: 0 auto;   
 }
+
+///HOME///
 .home-container{
     margin: 0 auto;
     padding: 50px 95px;
@@ -37,7 +39,8 @@ body{
         }
         
     }
-}   
+} 
+///MAIN///  
     .main-title{
         font-size:34px;
         font-family:$main-title;
@@ -55,7 +58,9 @@ body{
             text-decoration: underline;
 
         }
+
    }
+///ABOUT US SECTIONS////
    .about-container{
        margin: 0 auto;
        display: flex;
@@ -72,6 +77,12 @@ body{
            display: flex;
            flex-direction: row;
            color: rgb(75, 75, 75);
+           @media (max-width: 1100px) {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding: 2%;
+           }
            
            .about-text{
                 font-size: 16px;
@@ -82,21 +93,42 @@ body{
                 .img-home {
                 width:550px;
                 margin: 0px 15px;
+                @media (max-width: 1100px){
+                    padding-top: 15px;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 80%;
+                }
+                @media (max-width: 900px){
+                    margin: 0 auto;
+                    width: 95%;
+                    margin: 10px;
+                    text-align: center;
+                    }
  
             }
     
        }
    }
+///// SERVICES SECTION////  
   .section-title{
       display: block;
       position: relative;
       top: 20px;
+      @media (max-width: 1100px){
+        padding-top: 50px;
+        }
   } 
   .service-container{
       background-color:$secundary-color;
       margin: 0 auto;
       text-align: center;
-    
+      @media (max-width: 450px){
+        padding-bottom: 20px;
+    }
+   
         .section-wrap{
           display: flex;
           flex-direction: row;
@@ -105,6 +137,10 @@ body{
           margin: 0px auto;
           padding: 25px;
           color:rgb(75, 75, 75);
+          @media (min-width: 1100px){
+            display: flex;
+            padding: 0px 5px;
+            }
          
         .card-services{
         display: flex;
@@ -120,6 +156,24 @@ body{
         overflow: hidden; 
         transition-duration: .2s;
         transition-property: all;
+        @media (max-width: 1100px){
+            display: flex;
+            width:25%;
+            height: 100%;
+            padding: 8px 20px 20px 50px;
+            }
+        @media (max-width: 750px){
+            display: flex;
+            width: 60%;
+            height: 100%;
+        }
+        @media (max-width: 450px){
+            display: flex;
+            width: 90%;
+            height: 100%;
+            margin: 5% 2%;
+            padding: 5px 15px 15px 50px;
+        }
         &:hover{
         transform:translateY(-5px);  
       }
@@ -133,17 +187,30 @@ body{
         }
     }
 }
-
+ ///WHY CHOOSE US? SECTION///  
      .why-container {
         background-color: $main-color;
         margin: 0px auto;
         padding: 90px 80px 0px;
         height: 700px;
+        /*@media (max-width: 900px) {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 8px 10px;
+        }    */
         .card-servieces-second {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             margin: 0px auto;
+            @media (max-width: 999px) {
+                width: 100%;
+                margin: 2%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-grow: 1;
+            }
             .card-choose{
             margin: 0px auto;
             width: 300px;
@@ -158,6 +225,18 @@ body{
             font-size: 20px;
             font-family: $main-title;
             font-weight: bolder;
+           /* @media (max-width: 1100px) {
+                width: 85%;
+                height: 100%;
+                margin: 2%;
+                padding: 6%;
+            }
+            @media (max-width: 999px) {
+                width: 100%;
+                height: 100%;
+                margin: 2%;
+                padding: 6%;
+            }*/
             &:hover {
                 background-color: $terciary-color;
                 border: 1px solid  $terciary-color;
@@ -167,6 +246,9 @@ body{
                 font-size: 16px;
                 font-weight: 200;
                 line-height: 22px;
+                @media (max-width: 650px) {
+                    line-height: 19px;
+                    }
                 }
                 span {
                     padding-bottom: 5px;
@@ -188,6 +270,11 @@ body{
                     padding-bottom: 20px;
                     color: #D8EAFE;
                     padding-top: 10px;
+                    @media (max-width: 650px) {
+                        font-size: 40px;
+                        padding-bottom: 18px;
+
+                        }
                     .why-text {
                         color: #D8EAFE;
                         font-size: 40px;
@@ -196,9 +283,13 @@ body{
             }
         }
     }
-
+ ///OUR PORTFOLIO SECTION///  
     .portfolio-container {
         margin: 0px auto;
+        @media (max-width: 500px) {
+            padding-top: 30px;
+            margin-bottom: 30px;
+        }    
         .wrap-portfolio{
             margin: 0px 70px 70px;
             display: flex;
@@ -217,7 +308,7 @@ body{
                     top: 0px;
                     left: 0px;
                     border-radius: 10px;   
-                    margin: 0px auto;
+                    margin: 10px auto;
                     text-align: center;
                     font-family: $main-title;
                     display: none;
@@ -265,10 +356,10 @@ body{
                         width: 330px;
                         height: 230px;  
                         border-radius: 10px;                
-                        margin: 15px; 
+                        margin: 10px auto; 
                         overflow: hidden;  
                         position: relative;  
-                        transition: .8s;
+                        transition: .4s all;
                         cursor: pointer;
                         @media (max-width:1100px) {
                             display: flex;
@@ -285,12 +376,15 @@ body{
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
+                            overflow: hidden;
                           
                         
                         }   
                     }
                 }
             }
+
+ ///TESTIMONIAL SECTION///         
        
 .testimonial-container {
     margin: 10px auto;
@@ -334,103 +428,103 @@ body{
             }
         }    
     }
+//////      TEAM SECTION ////
 
-    #team {
-        padding-top: 60px;
-        padding-bottom: 5px;
-    .team-contanier {
-        margin: 0px auto 80px;
-        color: rgba(255, 255, 255, 1);
-        font-family: $main-text; 
-        .team {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 0px 60px;
+#team {
+    padding-top: 60px;
+    padding-bottom: 5px;
+.team-contanier {
+    margin: 0px auto 80px;
+    color: rgba(255, 255, 255, 1);
+    font-family: $main-text; 
+    .team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 60px;
+    position: relative;
+    @media (max-width: 1100px) {
+    flex-wrap: wrap;
+    margin: 30px auto;
+    }
+    .img-team {
+        margin: 8px auto;
         position: relative;
-        @media (max-width: 1100px) {
-        flex-wrap: wrap;
-        margin: 30px auto;
-        }
-        .img-team {
-            margin: 8px auto;
-            position: relative;
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            overflow: hidden;  
-            cursor: pointer; 
-            transition: .4s all;
-            img {
-                width: 100%;
-             }
-            &:hover .team-information {
-                display: block;
-                transform: translateY(-270px);
-                transition: .4s all;
-                background-color:  rgba(0, 66, 138, 0.7);
-                top: 80px;
-                .team-information {
-                    position: absolute;
-                    cursor: pointer;
-                    overflow: hidden;
-                    color: rgba(255, 255, 255, 1);
-                }
-                    .team-social-icon {
-                        position: absolute;
-                        top: 150px;
-                        left: 80px;
-                        transition: .4s all;
-                        color: white;
-                        cursor: pointer;
-                        i {
-                            margin-left: .4px;
-                        &:hover {
-                            color
-                            : $nav-color;
-                        }
-                    }
-                }
-                .team-member {
-                    margin: 0px auto;
-                    text-align: center;
-                    padding: 65px 0 0;
-                    width: 250px;
-                    height: 270px;
-                    transition: .4s all;
-                    h4 {
-                        font-size: $main-title;
-                        padding-bottom: 0px;
-                        margin-bottom: 0px;
-                        letter-spacing: 1.4px;
-                        font-weight: 900;
-                        transition: .4s all;
-                        }
-                    p {
-                        padding-top: 0px;
-                        margin-top: 0px;
-                        font-size: 13px;
-                        font-style: italic;
-                        transition: .4s all;
-                    }
-                }
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;  
+        cursor: pointer; 
+        transition: .5s all;
+        img {
+            width: 100%;
+         }
+        &:hover .team-information {
+            display: block;
+            transform: translateY(-270px);
+            transition: .5s all;
+            background-color:  rgba(0, 66, 138, 0.7);
+            .team-information {
+                position: absolute;
+                cursor: pointer;
+                overflow: hidden;
+                color: rgba(255, 255, 255, 1);
             }
-        }
-                
-                @media (max-width: 1100px) {
-                    flex-wrap: wrap;
-                    margin: 10px;          
+                .team-social-icon {
+                    position: absolute;
+                    top: 150px;
+                    left: 62px;
+                    transition: .5s all;
+                    color: white;
+                    cursor: pointer;
+                    i {
+                        margin-left: 6px;
+                        font-size: 20px;
+                    &:hover {
+                        color: $nav-color;
                         }
-                @media (max-width: 300px) {
-                    width: 90%;
-                    height: 90%;
-                    flex-wrap: wrap;
-                    margin: 10px; 
+                    }
+            }
+            .team-member {
+                margin: 0px auto;
+                text-align: center;
+                padding: 65px 0 0;
+                width: 250px;
+                height: 270px;
+                transition: .5s all;
+                h4 {
+                    font-size: $main-title;
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;
+                    letter-spacing: 1.4px;
+                    font-weight: 900;
+                    transition: .5s all;
+                }
+                p {
+                    padding-top: 0px;
+                    margin-top: 0px;
+                    font-size: 13px;
+                    font-style: italic;
+                    transition: .5s all;
                 }
             }
         }
     }
+            @media (max-width: 1100px) {
+                flex-wrap: wrap;
+                margin: 10px;          
+                    }
+            @media (max-width: 300px) {
+                width: 90%;
+                height: 90%;
+                flex-wrap: wrap;
+                margin: 10px; 
+            }
+        }
+    }
+}
 
+///// CLIENTS SECTION////
 .clients-container{
     background-color:$secundary-color;
     margin:0 auto;
@@ -459,6 +553,9 @@ body{
     }      
    }
 }
+
+///CONTACT SECTION///
+
 .contact-container{
     margin: 0 auto;
     font-family: $main-text;
